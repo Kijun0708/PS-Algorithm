@@ -1,4 +1,4 @@
-package baekjoon1;
+package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -10,9 +10,7 @@ public class Main_11656{
     
     public static void main(String[] args){
                	
-    	try {
-   
-    		
+    	try {	
     		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     		StringBuilder sb = new StringBuilder();
     		
@@ -20,15 +18,16 @@ public class Main_11656{
     		
     		String[] wordArr = new String[word.length()];     // 배열 생성후 입력한 단어의 길이만큼의 길이 설정
     		
-    		for(int i=0; i<word.length(); i++){				  // 앞 문자 하나씩 빼면서 배열에 저장
+    		for(int i = 0; i < word.length(); i++) {				  // 앞 문자 하나씩 빼면서 배열에 저장
     			wordArr[i] = word.substring(i);
     		}
     		
     		Arrays.sort(wordArr); 							  // 오름차순 정렬
     		
-    		for(int i=0; i<wordArr.length; i++){			  // 정렬된 배열을 StringBuilder에 저장
+    		for(int i = 0; i < wordArr.length; i++) {			  // 정렬된 배열을 StringBuilder에 저장
     			sb.append(wordArr[i]).append("\n");
     		}
+    		
     		reader.close();
     		
     		System.out.println(sb.toString()); 			

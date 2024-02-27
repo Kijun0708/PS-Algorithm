@@ -1,4 +1,4 @@
-package baekjoon1;
+package baekjoon;
 // 배열 돌리기1
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
