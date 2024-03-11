@@ -24,15 +24,15 @@ public class Main_1966 {
 				int M = Integer.parseInt(st.nextToken());
 				int count = 0;
 				
-				Queue<Integer> queue = new LinkedList<>();
-				Queue<Integer> indexQueue = new LinkedList<>();
+				Queue<Integer> queue = new LinkedList<>();		//값 저장하는 큐
+				Queue<Integer> indexQueue = new LinkedList<>(); //인덱스 저장하는 큐
 				
 				st = new StringTokenizer(reader.readLine());
 				
 				for(int j = 0; j < N; j++) {
 					int num = Integer.parseInt(st.nextToken());
 					
-					queue.add(num);
+					queue.offer(num);
 					indexQueue.offer(j);
 					
 				}
